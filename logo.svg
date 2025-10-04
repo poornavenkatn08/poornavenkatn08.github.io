@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="180" viewBox="0 0 920 180" role="img" aria-label="Poorna Venkat Neelakantam logo">
+  <rect width="100%" height="100%" fill="none"/>
+  <g transform="translate(16,20) scale(2.0)">
+    
+<g id="glyph">
+  <rect x="6" y="34" width="10" height="24" rx="2" fill="#269cff"/>
+  <rect x="22" y="26" width="10" height="32" rx="2" fill="#1ce783"/>
+  <rect x="38" y="16" width="10" height="42" rx="2" fill="#269cff"/>
+</g>
+
+  </g>
+  <g transform="translate(140,108)">
+    <text x="0" y="0" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif"
+          font-size="52" font-weight="700" fill="#0d3e68" letter-spacing="0.5">
+      Poorna Venkat Neelakantam
+    </text>
+    <text x="0" y="36" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif"
+          font-size="18" font-weight="500" fill="#269cff">DATA ANALYTICS • DASHBOARDS • INSIGHTS</text>
+  </g>
+</svg>
