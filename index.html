@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"><!DOCTYPE html>
-<html lang="en">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poorna Venkat Neelakantam - Data Analytics Portfolio</title>
@@ -448,6 +445,28 @@
             border-left: 4px solid #667eea;
         }
 
+        .about-achievements {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+
+        .about-achievements li {
+            padding-left: 1.5rem;
+            margin-bottom: 0.8rem;
+            position: relative;
+            color: #4a5568;
+            line-height: 1.6;
+        }
+
+        .about-achievements li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -785,8 +804,9 @@
             padding-left: 1.2rem;
             margin-bottom: 0.5rem;
             position: relative;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             color: #4a5568;
+            line-height: 1.6;
         }
 
         .project-highlights li::before {
@@ -1059,17 +1079,24 @@
         </div>
     </section>
 
+    <!-- UPDATED ABOUT SECTION WITH ACTION VERBS -->
     <section id="about">
         <h2 class="section-title">About Me</h2>
         <div class="about-content">
             <p class="about-text">
-                I'm a passionate Data Analytics professional pursuing my Master of Science in Management (Data Analytics) at Indiana Wesleyan University (graduating December 2025). With hands-on experience as a Software Engineer at OpenText and a strong foundation in computer science from SRM University, I bring a unique blend of technical expertise and analytical thinking to every project.
+                Data Analytics professional with 1+ year of software engineering experience at OpenText, currently completing MS in Management (Data Analytics) at Indiana Wesleyan University. I specialize in transforming complex datasets into actionable business insights using SQL, Python, Tableau, and Power BI.
             </p>
-            <p class="about-text">
-                My journey in data analytics is driven by a fascination with transforming raw data into actionable insights. I've worked with datasets ranging from thousands to millions of records, building pipelines, dashboards, and automation tools that drive real business impact.
-            </p>
+            
+            <p class="about-text"><strong>Key Achievements:</strong></p>
+            <ul class="about-achievements">
+                <li>Built customer segmentation models using Python and Scikit-learn, identifying R$2.9M revenue recovery opportunities from 96,477 customer records</li>
+                <li>Designed interactive Tableau dashboards analyzing 200K+ transactions, enabling real-time business intelligence for stakeholder decision-making</li>
+                <li>Optimized backend APIs using Java and SQL, reducing response times by 75% (800ms → 200ms) while handling 50K+ daily requests</li>
+                <li>Developed automated ETL pipelines reducing data processing time from 4+ hours to under 2 seconds with 99.8% data retention</li>
+            </ul>
+            
             <div class="about-highlight">
-                <strong>Currently:</strong> Completing my Master's degree with a 3.44 GPA, while building a portfolio of data analytics projects that showcase skills in SQL, Python, Tableau, and Power BI. I'm actively seeking opportunities to leverage my technical background and analytics expertise in a data-focused role.
+                <strong>Currently Seeking:</strong> Entry-level Data Analyst positions where I can leverage my technical skills in SQL, Python, and data visualization to drive data-driven decision making. Expected graduation: December 2025.
             </div>
         </div>
     </section>
@@ -1238,7 +1265,7 @@
         <h2 class="section-title">Featured Projects</h2>
         <div class="projects-grid">
 
-            <!-- NEW PROJECT: E-Commerce Customer Analytics -->
+            <!-- NEW PROJECT: E-Commerce Customer Analytics - UPDATED WITH ACTION VERBS -->
             <div class="project-card">
                 <div class="project-header">
                     <span class="featured-badge">⭐ Latest Project</span>
@@ -1250,12 +1277,12 @@
                         <div class="project-info">
                             <h4>Project Overview</h4>
                             <ul class="project-highlights">
-                                <li>Analyzed 100K+ orders and 96,477 customers from Brazilian e-commerce platform</li>
-                                <li>Built RFM (Recency, Frequency, Monetary) scoring model with 10 customer segments</li>
-                                <li>Applied K-Means clustering achieving 0.485 silhouette score for segment validation</li>
-                                <li>Identified R$2.9M revenue recovery opportunity from churned "Lost" customers</li>
-                                <li>Flagged 12,039 at-risk customers for targeted retention campaigns</li>
-                                <li>Discovered 40% revenue spike in November for seasonal marketing optimization</li>
+                                <li>Built RFM (Recency, Frequency, Monetary) scoring model using Python and Pandas, segmenting 96,477 customers into 10 actionable groups including Champions, At-Risk, and Lost segments</li>
+                                <li>Validated customer segments using K-Means clustering in Scikit-learn, achieving 0.485 silhouette score with optimal 3-cluster solution</li>
+                                <li>Identified R$2.9M revenue recovery opportunity by analyzing churned "Lost" customers, recommending targeted win-back campaigns</li>
+                                <li>Flagged 12,039 at-risk customers through RFM analysis, enabling proactive retention campaigns with potential 20% churn reduction</li>
+                                <li>Discovered 40% revenue spike in November through time-series analysis, informing seasonal marketing optimization strategy</li>
+                                <li>Designed interactive Tableau dashboard with 4 visualizations (treemap, bar chart, scatter plot, trend line), enabling real-time segment monitoring</li>
                             </ul>
                             <div class="project-tags">
                                 <span class="tag">Tableau</span>
@@ -1291,7 +1318,7 @@
                 </div>
             </div>
             
-            <!-- Project 1: Fintech Payments Analytics -->
+            <!-- Project 1: Fintech Payments Analytics - UPDATED WITH ACTION VERBS -->
             <div class="project-card">
                 <div class="project-header">
                     <h3>💳 Fintech Payments Analytics Dashboard</h3>
@@ -1302,11 +1329,11 @@
                         <div class="project-info">
                             <h4>Project Overview</h4>
                             <ul class="project-highlights">
-                                <li>Analyzed 500K+ payment transactions across multiple channels</li>
-                                <li>Built real-time monitoring dashboard for transaction patterns</li>
-                                <li>Identified fraud indicators reducing false positives by 40%</li>
-                                <li>Created automated alerts for anomalous payment behavior</li>
-                                <li>Improved transaction processing insights with drill-down capabilities</li>
+                                <li>Analyzed 500K+ payment transactions across 5 channels using SQL aggregations and window functions to identify spending patterns</li>
+                                <li>Built real-time monitoring dashboard in Tableau with automated refresh, enabling instant detection of transaction anomalies</li>
+                                <li>Identified fraud indicators using statistical analysis, reducing false positive alerts by 40% through pattern recognition</li>
+                                <li>Created automated alert system using calculated fields in Tableau, flagging anomalous payment behavior for review</li>
+                                <li>Designed drill-down capabilities enabling stakeholders to investigate transactions from summary to individual record level</li>
                             </ul>
                             <div class="project-tags">
                                 <span class="tag">Tableau</span>
@@ -1339,7 +1366,7 @@
                 </div>
             </div>
 
-            <!-- Project 2: Airbnb Analytics -->
+            <!-- Project 2: Airbnb Analytics - UPDATED WITH ACTION VERBS -->
             <div class="project-card">
                 <div class="project-header">
                     <h3>🏠 Airbnb Market Analytics Dashboard</h3>
@@ -1350,11 +1377,11 @@
                         <div class="project-info">
                             <h4>Project Overview</h4>
                             <ul class="project-highlights">
-                                <li>Analyzed rental data across multiple cities and property types</li>
-                                <li>Created pricing strategy recommendations based on market trends</li>
-                                <li>Built occupancy rate forecasting models with 85% accuracy</li>
-                                <li>Identified high-performing neighborhoods and seasonal patterns</li>
-                                <li>Developed revenue optimization insights for property owners</li>
+                                <li>Analyzed rental data across multiple cities using Python Pandas, identifying pricing trends and high-performing property types</li>
+                                <li>Created pricing strategy recommendations based on market trend analysis, enabling property owners to optimize revenue</li>
+                                <li>Built occupancy rate forecasting models using time-series analysis, achieving 85% prediction accuracy</li>
+                                <li>Identified top-performing neighborhoods through geospatial analysis in Tableau, revealing seasonal demand patterns</li>
+                                <li>Developed revenue optimization insights correlating pricing, location, and amenities to maximize property returns</li>
                             </ul>
                             <div class="project-tags">
                                 <span class="tag">Tableau</span>
@@ -1387,7 +1414,7 @@
                 </div>
             </div>
 
-            <!-- Project 3: Healthcare Analytics -->
+            <!-- Project 3: Healthcare Analytics - UPDATED WITH ACTION VERBS -->
             <div class="project-card">
                 <div class="project-header">
                     <h3>🏥 Healthcare Operations Dashboard</h3>
@@ -1398,11 +1425,11 @@
                         <div class="project-info">
                             <h4>Project Overview</h4>
                             <ul class="project-highlights">
-                                <li>Analyzed 30K+ patient records for operational efficiency</li>
-                                <li>Reduced average wait times by 25% through bottleneck identification</li>
-                                <li>Created staff allocation models optimizing resource utilization</li>
-                                <li>Built patient satisfaction tracking with real-time metrics</li>
-                                <li>Implemented predictive models for patient volume forecasting</li>
+                                <li>Analyzed 30K+ patient records using SQL queries and Power BI, identifying operational bottlenecks in patient flow</li>
+                                <li>Reduced average wait times by 25% through data-driven bottleneck identification and process optimization recommendations</li>
+                                <li>Created staff allocation models using DAX calculations, optimizing resource utilization across departments</li>
+                                <li>Built patient satisfaction tracking dashboard with real-time KPIs, enabling proactive service quality management</li>
+                                <li>Implemented predictive models for patient volume forecasting using historical trends and seasonal patterns</li>
                             </ul>
                             <div class="project-tags">
                                 <span class="tag">Power BI</span>
@@ -1433,7 +1460,7 @@
                 </div>
             </div>
 
-            <!-- Project 4: Tech Layoffs Analysis -->
+            <!-- Project 4: Tech Layoffs Analysis - UPDATED WITH ACTION VERBS -->
             <div class="project-card">
                 <div class="project-header">
                     <h3>💼 Tech Industry Layoffs Analysis</h3>
@@ -1444,11 +1471,11 @@
                         <div class="project-info">
                             <h4>Project Overview</h4>
                             <ul class="project-highlights">
-                                <li>Built SQL ETL pipeline for 2K+ financial & HR records</li>
-                                <li>Reduced data quality issues from 23% to less than 2%</li>
-                                <li>Designed reusable SQL functions with CTEs and window functions</li>
-                                <li>Improved reporting accuracy by 95% through systematic data validation</li>
-                                <li>Created automated data cleaning and transformation workflows</li>
+                                <li>Built SQL ETL pipeline using CTEs and window functions, processing 2K+ financial and HR records with systematic data validation</li>
+                                <li>Reduced data quality issues from 23% to less than 2% through automated duplicate detection and format standardization</li>
+                                <li>Designed reusable SQL functions for data cleaning, creating scalable framework for future dataset processing</li>
+                                <li>Improved reporting accuracy by 95% through systematic data validation rules and constraint implementation</li>
+                                <li>Created automated data cleaning workflows using staging tables, enabling reproducible ETL processes</li>
                             </ul>
                             <div class="project-tags">
                                 <span class="tag">SQL</span>
@@ -1474,7 +1501,7 @@
                 </div>
             </div>
 
-            <!-- Project 5: Python Analytics Toolkit -->
+            <!-- Project 5: Python Analytics Toolkit - UPDATED WITH ACTION VERBS -->
             <div class="project-card">
                 <div class="project-header">
                     <h3>🐍 Advanced Python Analytics Toolkit</h3>
@@ -1485,11 +1512,11 @@
                         <div class="project-info">
                             <h4>Project Overview</h4>
                             <ul class="project-highlights">
-                                <li>Automated pipeline for 2,361+ business datasets</li>
-                                <li>Reduced processing time from 4+ hours to 2 seconds</li>
-                                <li>Conducted correlation analysis across 19 features</li>
-                                <li>Identified 31+ strong relationships for systematic outlier detection</li>
-                                <li>Built web scraping system reducing manual collection by 95%</li>
+                                <li>Developed automated analytics pipeline using Python and Pandas, processing 2,361+ business datasets with consistent methodology</li>
+                                <li>Reduced data processing time from 4+ hours to under 2 seconds through optimized vectorized operations and efficient algorithms</li>
+                                <li>Conducted correlation analysis across 19 features using SciPy, identifying 31+ statistically significant relationships</li>
+                                <li>Implemented systematic outlier detection using IQR method, improving data quality for downstream analysis</li>
+                                <li>Built web scraping system using BeautifulSoup, reducing manual data collection effort by 95%</li>
                             </ul>
                             <div class="project-tags">
                                 <span class="tag">Python</span>
@@ -1518,6 +1545,7 @@
         </div>
     </section>
 
+    <!-- UPDATED JOURNEY SECTION WITH ACTION VERBS -->
     <section id="journey">
         <h2 class="section-title">My Journey</h2>
         <div class="timeline">
@@ -1527,9 +1555,9 @@
                     <div class="timeline-title">MS in Management (Data Analytics)</div>
                     <div class="timeline-company">Indiana Wesleyan University - Marion, IN</div>
                     <ul class="timeline-achievements">
-                        <li>GPA: 3.44 | Expected Graduation: December 2025 (Degree conferred January 2026)</li>
-                        <li>Specialized coursework in advanced analytics, statistical modeling, and business intelligence</li>
-                        <li>Built comprehensive portfolio of data analytics projects using SQL, Python, Tableau, and Power BI</li>
+                        <li>Maintaining 3.44 GPA while completing advanced coursework in statistical modeling, business intelligence, and predictive analytics</li>
+                        <li>Built comprehensive portfolio of 6+ data analytics projects demonstrating proficiency in SQL, Python, Tableau, and Power BI</li>
+                        <li>Applied machine learning techniques including K-Means clustering and RFM analysis to real-world business datasets</li>
                     </ul>
                 </div>
                 <div class="timeline-dot"></div>
@@ -1541,9 +1569,9 @@
                     <div class="timeline-title">Master's in Computer Science</div>
                     <div class="timeline-company">Illinois Institute of Technology - Chicago, IL</div>
                     <ul class="timeline-achievements">
-                        <li>Completed advanced coursework in algorithms, data structures, and software engineering</li>
-                        <li>Transferred to Indiana Wesleyan University to specialize in Data Analytics</li>
-                        <li>Gained strong foundation in computational thinking and problem-solving</li>
+                        <li>Completed advanced coursework in algorithms, data structures, and software engineering principles</li>
+                        <li>Gained strong foundation in computational thinking and problem-solving methodologies</li>
+                        <li>Transferred to Indiana Wesleyan University to specialize in Data Analytics and business applications</li>
                     </ul>
                 </div>
                 <div class="timeline-dot"></div>
@@ -1555,10 +1583,10 @@
                     <div class="timeline-title">Associate Software Engineer</div>
                     <div class="timeline-company">OpenText - Bengaluru, India</div>
                     <ul class="timeline-achievements">
-                        <li>Designed and optimized backend APIs handling 50K+ daily client requests</li>
-                        <li>Investigated and resolved 25+ production issues, improving system uptime to 99.5%</li>
-                        <li>Optimized database queries and connection pooling, contributing to 20% reduction in startup time</li>
-                        <li>Enhanced caching layer reducing API response times from 800ms to 200ms (75% improvement)</li>
+                        <li>Designed and optimized backend APIs using Java and Spring Boot, handling 50K+ daily client requests with 99.5% uptime</li>
+                        <li>Investigated and resolved 25+ production issues through root cause analysis, implementing permanent fixes that improved system reliability</li>
+                        <li>Optimized database queries and connection pooling using SQL tuning techniques, contributing to 20% reduction in application startup time</li>
+                        <li>Enhanced caching layer using Redis, reducing API response times from 800ms to 200ms (75% improvement) for frequently accessed data</li>
                     </ul>
                 </div>
                 <div class="timeline-dot"></div>
@@ -1570,10 +1598,10 @@
                     <div class="timeline-title">Digital Solutions Intern</div>
                     <div class="timeline-company">OpenText - Bengaluru, India</div>
                     <ul class="timeline-achievements">
-                        <li>Assisted in ActiveMQ to Kafka migration testing for 10,000+ daily workflow messages</li>
-                        <li>Developed Python log parser automating error detection, reducing monitoring from 4 hours to 30 minutes</li>
-                        <li>Created technical documentation for REST API endpoints and database schemas across 3 applications</li>
-                        <li>Supported Jenkins CI/CD pipeline configuration for automated testing workflows</li>
+                        <li>Assisted in ActiveMQ to Kafka migration testing, validating message integrity for 10,000+ daily workflow messages</li>
+                        <li>Developed Python log parser automating error detection and categorization, reducing monitoring time from 4 hours to 30 minutes daily</li>
+                        <li>Created technical documentation for REST API endpoints and database schemas across 3 enterprise applications</li>
+                        <li>Supported Jenkins CI/CD pipeline configuration, enabling automated testing workflows for development team</li>
                     </ul>
                 </div>
                 <div class="timeline-dot"></div>
@@ -1585,9 +1613,9 @@
                     <div class="timeline-title">Bachelor of Technology, Computer Science</div>
                     <div class="timeline-company">SRM University, AP - Mangalagiri, India</div>
                     <ul class="timeline-achievements">
-                        <li>GPA: 3.7 | Strong foundation in algorithms, data structures, and software engineering</li>
-                        <li>Chaired flagship Techfest with 5,000+ participants, managing data-driven operations</li>
-                        <li>Led 25+ technical events, strengthening organizational and communication skills</li>
+                        <li>Graduated with 3.7 GPA, building strong foundation in algorithms, data structures, and software engineering principles</li>
+                        <li>Chaired flagship Techfest with 5,000+ participants, managing event logistics and data-driven operational decisions</li>
+                        <li>Led 25+ technical events as student coordinator, developing organizational leadership and cross-functional communication skills</li>
                     </ul>
                 </div>
                 <div class="timeline-dot"></div>
@@ -1694,34 +1722,22 @@
     <script>
         // Visitor Counter Function
         function updateCounter(img) {
-            // Extract count from the badge
-            const canvas = document.createElement('canvas');
-            const ctx = canvas.getContext('2d');
-            canvas.width = img.width;
-            canvas.height = img.height;
-            ctx.drawImage(img, 0, 0);
-            
-            // For now, use a simple counter stored in localStorage
             let visits = localStorage.getItem('pageVisits') || 0;
             visits = parseInt(visits) + 1;
             localStorage.setItem('pageVisits', visits);
-            
             document.getElementById('visit-count').textContent = visits.toLocaleString();
         }
 
         // Initialize counter on page load
         window.addEventListener('load', () => {
-            // Use hits.seeyoufarm.com API for tracking
             fetch('https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fpoornavenkatn08.github.io&count_bg=%23667EEA&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=visits&edge_flat=false')
                 .then(() => {
-                    // Fallback to localStorage for display
                     let visits = localStorage.getItem('pageVisits') || 0;
                     visits = parseInt(visits) + 1;
                     localStorage.setItem('pageVisits', visits);
                     document.getElementById('visit-count').textContent = visits.toLocaleString();
                 })
                 .catch(() => {
-                    // Fallback
                     let visits = localStorage.getItem('pageVisits') || 0;
                     visits = parseInt(visits) + 1;
                     localStorage.setItem('pageVisits', visits);
@@ -1762,7 +1778,6 @@
             const mesh = new THREE.Mesh(geometry, material);
             mesh.position.set(bar.x, bar.height / 2 - 15, 0);
             
-            // Add edges
             const edges = new THREE.EdgesGeometry(geometry);
             const line = new THREE.LineSegments(
                 edges, 
@@ -1799,7 +1814,6 @@
             const mesh = new THREE.Mesh(geometry, material);
             mesh.rotation.x = Math.PI / 2;
             
-            // Add edges
             const edges = new THREE.EdgesGeometry(geometry);
             const line = new THREE.LineSegments(
                 edges, 
@@ -1855,19 +1869,15 @@
         function animate() {
             requestAnimationFrame(animate);
 
-            // Rotate bar chart
             barGroup.rotation.y += 0.003;
             barGroup.rotation.x = Math.sin(Date.now() * 0.0005) * 0.1;
 
-            // Rotate pie chart
             pieGroup.rotation.y -= 0.004;
             pieGroup.rotation.z = Math.cos(Date.now() * 0.0005) * 0.1;
 
-            // Animate particles
             particlesMesh.rotation.y += 0.001;
             particlesMesh.rotation.x += 0.0005;
 
-            // Camera movement based on scroll
             camera.position.y = -scrollY * 0.01;
 
             renderer.render(scene, camera);
@@ -1875,14 +1885,12 @@
 
         animate();
 
-        // Handle window resize
         window.addEventListener('resize', () => {
             camera.aspect = window.innerWidth / window.innerHeight;
             camera.updateProjectionMatrix();
             renderer.setSize(window.innerWidth, window.innerHeight);
         });
 
-        // Mouse parallax effect
         document.addEventListener('mousemove', (e) => {
             const mouseX = (e.clientX / window.innerWidth) * 2 - 1;
             const mouseY = -(e.clientY / window.innerHeight) * 2 + 1;
@@ -1923,7 +1931,6 @@
             }, 16);
         }
 
-        // Observe stats section
         const statsObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -1937,7 +1944,6 @@
         const heroStats = document.querySelector('.hero-stats');
         if (heroStats) statsObserver.observe(heroStats);
 
-        // Animate skill bars on scroll
         const skillsObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -1952,7 +1958,6 @@
             skillsObserver.observe(skill);
         });
 
-        // Smooth scroll for navigation
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -1966,7 +1971,6 @@
             });
         });
 
-        // Fade-in animations on scroll
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -100px 0px'
@@ -1988,1936 +1992,6 @@
             fadeObserver.observe(section);
         });
 
-        // Navbar background on scroll
-        window.addEventListener('scroll', () => {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.style.boxShadow = '0 2px 30px rgba(0,0,0,0.15)';
-            } else {
-                navbar.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
-            }
-        });
-    </script>
-</body>
-</html>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poorna Venkat Neelakantam - Data Analytics Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
-            color: #2d3748;
-            overflow-x: hidden;
-            position: relative;
-        }
-
-        /* Animated Background */
-        .bg-animation {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            overflow: hidden;
-        }
-
-        #three-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-        }
-
-        .bg-shape {
-            position: absolute;
-            border-radius: 50%;
-            opacity: 0.1;
-            animation: float 20s infinite ease-in-out;
-        }
-
-        .bg-shape:nth-child(1) {
-            width: 300px;
-            height: 300px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            top: 10%;
-            left: 10%;
-            animation-delay: 0s;
-        }
-
-        .bg-shape:nth-child(2) {
-            width: 200px;
-            height: 200px;
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-            top: 60%;
-            right: 20%;
-            animation-delay: 3s;
-        }
-
-        .bg-shape:nth-child(3) {
-            width: 250px;
-            height: 250px;
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-            bottom: 10%;
-            left: 30%;
-            animation-delay: 6s;
-        }
-
-        .bg-shape:nth-child(4) {
-            width: 180px;
-            height: 180px;
-            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
-            top: 30%;
-            right: 10%;
-            animation-delay: 9s;
-        }
-
-        .bg-shape:nth-child(5) {
-            width: 220px;
-            height: 220px;
-            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
-            bottom: 30%;
-            right: 40%;
-            animation-delay: 12s;
-        }
-
-        @keyframes float {
-            0%, 100% {
-                transform: translate(0, 0) scale(1);
-            }
-            25% {
-                transform: translate(30px, -50px) scale(1.1);
-            }
-            50% {
-                transform: translate(-20px, -80px) scale(0.9);
-            }
-            75% {
-                transform: translate(40px, -30px) scale(1.05);
-            }
-        }
-
-        .navbar {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
-            z-index: 1000;
-            padding: 1rem 0;
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 2rem;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .logo-img {
-            height: 40px;
-            width: auto;
-            transition: transform 0.3s;
-        }
-
-        .logo:hover .logo-img {
-            transform: scale(1.1) rotate(5deg);
-        }
-
-        .logo-text {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: #4a5568;
-            font-weight: 500;
-            transition: color 0.3s;
-            position: relative;
-        }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            transition: width 0.3s;
-        }
-
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-
-        .social-icons {
-            display: flex;
-            gap: 1rem;
-        }
-
-        .social-icons a {
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            text-decoration: none;
-            transition: transform 0.3s;
-        }
-
-        .social-icons a:hover {
-            transform: scale(1.1) rotate(5deg);
-        }
-
-        /* Visitor Counter */
-        .visitor-counter {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: white;
-            padding: 1rem 1.5rem;
-            border-radius: 50px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
-            display: flex;
-            align-items: center;
-            gap: 0.8rem;
-            z-index: 999;
-            transition: transform 0.3s;
-        }
-
-        .visitor-counter:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
-        }
-
-        .visitor-icon {
-            font-size: 1.5rem;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .visitor-count {
-            display: flex;
-            flex-direction: column;
-            gap: 0.2rem;
-        }
-
-        .visitor-label {
-            font-size: 0.7rem;
-            color: #718096;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            font-weight: 600;
-        }
-
-        .visitor-number {
-            font-size: 1.3rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        @media (max-width: 768px) {
-            .visitor-counter {
-                bottom: 10px;
-                right: 10px;
-                padding: 0.8rem 1.2rem;
-            }
-            
-            .visitor-number {
-                font-size: 1.1rem;
-            }
-        }
-
-        .hero {
-            padding: 8rem 2rem 4rem;
-            text-align: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            position: relative;
-        }
-
-        .profile-image-container {
-            margin: 0 auto 2rem;
-            width: 200px;
-            height: 200px;
-            position: relative;
-            animation: fadeInUp 1s ease;
-        }
-
-        .profile-image {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 5px solid white;
-            box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3);
-            position: relative;
-            z-index: 2;
-        }
-
-        .profile-ring {
-            position: absolute;
-            top: -10px;
-            left: -10px;
-            width: 220px;
-            height: 220px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            opacity: 0.2;
-            animation: pulse 3s infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% {
-                transform: scale(1);
-                opacity: 0.2;
-            }
-            50% {
-                transform: scale(1.1);
-                opacity: 0.3;
-            }
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            animation: fadeInUp 1s ease;
-            text-shadow: 0 2px 10px rgba(102, 126, 234, 0.3);
-        }
-
-        .hero-subtitle {
-            font-size: 1.5rem;
-            color: #2d3748;
-            margin-bottom: 0.5rem;
-            animation: fadeInUp 1s ease 0.2s both;
-            font-weight: 600;
-            text-shadow: 0 2px 4px rgba(255, 255, 255, 0.8);
-        }
-
-        .hero-location {
-            font-size: 1.1rem;
-            color: #4a5568;
-            margin-bottom: 2rem;
-            animation: fadeInUp 1s ease 0.3s both;
-            font-weight: 500;
-            text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8);
-        }
-
-        .hero-location i {
-            color: #667eea;
-        }
-
-        .hero-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            flex-wrap: wrap;
-            animation: fadeInUp 1s ease 0.4s both;
-        }
-
-        .hero-stats {
-            display: flex;
-            justify-content: center;
-            gap: 3rem;
-            margin-top: 3rem;
-            animation: fadeInUp 1s ease 0.5s both;
-            flex-wrap: wrap;
-        }
-
-        .stat-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-            min-width: 150px;
-        }
-
-        .stat-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .stat-number {
-            font-size: 2.5rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .stat-label {
-            color: #718096;
-            font-size: 0.9rem;
-            margin-top: 0.5rem;
-        }
-
-        section {
-            max-width: 1200px;
-            margin: 4rem auto;
-            padding: 0 2rem;
-            animation: fadeInUp 1s ease;
-        }
-
-        .section-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 3rem;
-            text-align: center;
-            position: relative;
-        }
-
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 2px;
-        }
-
-        .about-content {
-            background: white;
-            padding: 3rem;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-
-        .about-text {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: #4a5568;
-            margin-bottom: 2rem;
-        }
-
-        .about-highlight {
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
-            padding: 1.5rem;
-            border-radius: 10px;
-            border-left: 4px solid #667eea;
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-        }
-
-        .skill-category {
-            background: white;
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-
-        .skill-category:hover {
-            transform: translateY(-5px);
-        }
-
-        .skill-category-title {
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.8rem;
-        }
-
-        .skill-icon {
-            font-size: 1.8rem;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .skill-item {
-            margin-bottom: 1rem;
-        }
-
-        .skill-name {
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            color: #2d3748;
-        }
-
-        .skill-bar {
-            background: #e2e8f0;
-            height: 8px;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        .skill-progress {
-            height: 100%;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 10px;
-            transition: width 1s ease;
-        }
-
-        .timeline {
-            position: relative;
-            padding: 2rem 0;
-        }
-
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            transform: translateX(0);
-            width: 2px;
-            height: 100%;
-            background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
-        }
-
-        .timeline-item {
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
-            margin-bottom: 3rem;
-            position: relative;
-            padding-left: 50px;
-        }
-
-        .timeline-item:nth-child(even) {
-            flex-direction: row;
-        }
-
-        .timeline-content {
-            width: 100%;
-            background: white;
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-
-        .timeline-content:hover {
-            transform: translateX(10px);
-        }
-
-        .timeline-dot {
-            position: absolute;
-            left: -10px;
-            top: 0;
-            width: 20px;
-            height: 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 50%;
-            border: 4px solid white;
-            box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.2);
-        }
-
-        .timeline-date {
-            color: #667eea;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .timeline-title {
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-        }
-
-        .timeline-company {
-            color: #718096;
-            margin-bottom: 1rem;
-            font-style: italic;
-        }
-
-        .timeline-achievements {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .timeline-achievements li {
-            padding-left: 1.5rem;
-            margin-bottom: 0.5rem;
-            position: relative;
-            color: #4a5568;
-            line-height: 1.6;
-        }
-
-        .timeline-achievements li::before {
-            content: '▸';
-            position: absolute;
-            left: 0;
-            color: #667eea;
-            font-weight: bold;
-        }
-
-        .tableau-container {
-            background: white;
-            padding: 3rem;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-
-        .tableau-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 3rem;
-            margin-top: 2rem;
-        }
-
-        .tableau-card {
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-            transition: transform 0.3s;
-        }
-
-        .tableau-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .tableau-title {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            color: #2d3748;
-            text-align: center;
-        }
-
-        .tableau-card iframe {
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .values-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
-        }
-
-        .value-card {
-            background: white;
-            padding: 2.5rem;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-            text-align: center;
-        }
-
-        .value-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.2);
-        }
-
-        .value-icon {
-            width: 80px;
-            height: 80px;
-            margin: 0 auto 1.5rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            font-size: 2.5rem;
-        }
-
-        .value-title {
-            font-size: 1.4rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            color: #2d3748;
-        }
-
-        .value-description {
-            color: #4a5568;
-            line-height: 1.7;
-            text-align: left;
-        }
-
-        .projects-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 3rem;
-        }
-
-        .project-card {
-            background: white;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .project-header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 2rem;
-            color: white;
-        }
-
-        .project-header h3 {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .project-header p {
-            font-size: 1.1rem;
-            opacity: 0.95;
-        }
-
-        .project-body {
-            padding: 2rem;
-        }
-
-        .project-details {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .project-info h4 {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-            color: #2d3748;
-        }
-
-        .tableau-embed {
-            width: 100%;
-            margin: 2rem 0;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-        }
-
-        .tableau-embed iframe {
-            width: 100%;
-            border: none;
-        }
-
-        .project-image {
-            width: 100%;
-            height: 200px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 3rem;
-        }
-
-        .project-content {
-            padding: 2rem;
-        }
-
-        .project-title {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
-
-        .project-description {
-            color: #718096;
-            margin-bottom: 1rem;
-            line-height: 1.6;
-        }
-
-        .project-highlights {
-            list-style: none;
-            padding: 0;
-            margin-bottom: 1.5rem;
-        }
-
-        .project-highlights li {
-            padding-left: 1.2rem;
-            margin-bottom: 0.5rem;
-            position: relative;
-            font-size: 0.9rem;
-            color: #4a5568;
-        }
-
-        .project-highlights li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: #667eea;
-            font-weight: bold;
-        }
-
-        .project-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .tag {
-            background: rgba(102, 126, 234, 0.1);
-            color: #667eea;
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 500;
-        }
-
-        .project-links {
-            display: flex;
-            gap: 1rem;
-        }
-
-        .btn {
-            padding: 0.8rem 1.5rem;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s;
-            display: inline-block;
-            text-align: center;
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
-        }
-
-        .btn-secondary {
-            border: 2px solid #667eea;
-            color: #667eea;
-        }
-
-        .btn-secondary:hover {
-            background: #667eea;
-            color: white;
-        }
-
-        .contact-container {
-            background: white;
-            padding: 3rem;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            gap: 3rem;
-            margin: 2rem 0;
-            flex-wrap: wrap;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 0.8rem;
-            color: #4a5568;
-        }
-
-        .contact-item i {
-            color: #667eea;
-            font-size: 1.3rem;
-        }
-
-        .contact-icons {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .contact-icon {
-            width: 60px;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            font-size: 1.5rem;
-            transition: transform 0.3s;
-            cursor: pointer;
-            text-decoration: none;
-        }
-
-        .contact-icon:hover {
-            transform: scale(1.1) rotate(10deg);
-        }
-
-        footer {
-            text-align: center;
-            padding: 2rem;
-            background: white;
-            margin-top: 4rem;
-            color: #718096;
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .hero-subtitle {
-                font-size: 1.2rem;
-            }
-            
-            .hero-stats {
-                flex-direction: column;
-                gap: 1rem;
-            }
-            
-            .timeline::before {
-                left: 0;
-            }
-            
-            .timeline-content {
-                width: 100%;
-            }
-            
-            .timeline-item {
-                padding-left: 40px;
-            }
-            
-            .timeline-dot {
-                left: -10px;
-            }
-            
-            .nav-links {
-                display: none;
-            }
-
-            .projects-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .project-details {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
-</head>
-<body>
-    <!-- 3D Background Visualization -->
-    <div id="three-container"></div>
-
-    <!-- Animated Background -->
-    <div class="bg-animation">
-        <div class="bg-shape"></div>
-        <div class="bg-shape"></div>
-        <div class="bg-shape"></div>
-        <div class="bg-shape"></div>
-        <div class="bg-shape"></div>
-    </div>
-
-    <!-- Visitor Counter -->
-    <div class="visitor-counter">
-        <i class="fas fa-eye visitor-icon"></i>
-        <div class="visitor-count">
-            <span class="visitor-label">Page Visits</span>
-            <span class="visitor-number" id="visit-count">
-                <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fpoornavenkatn08.github.io&count_bg=%23667EEA&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=visits&edge_flat=false" alt="visitor count" style="display:none;" onload="updateCounter(this)"/>
-                Loading...
-            </span>
-        </div>
-    </div>
-
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <img src="logo.svg" alt="PVN Logo" class="logo-img">
-                <span class="logo-text">PVN</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#journey">My Journey</a></li>
-                <li><a href="#values">Values</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/pneelakantam/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/poornavenkatn08" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-            </div>
-        </div>
-    </nav>
-
-    <section class="hero">
-        <div class="profile-image-container">
-            <div class="profile-ring"></div>
-            <img src="profile-picture.png" alt="Poorna Venkat Neelakantam" class="profile-image">
-        </div>
-        <h1>Poorna Venkat Neelakantam</h1>
-        <p class="hero-subtitle">Data Analytics Professional | MS Management (Data Analytics)</p>
-        <p class="hero-location"><i class="fas fa-map-marker-alt"></i> Chicago, Illinois</p>
-        
-        <div class="hero-buttons">
-            <a href="#contact" class="btn btn-primary">Get In Touch</a>
-            <a href="Poorna_Venkat_Neelakantam_Resume_DataAnalyst.pdf" download class="btn btn-secondary">Download Resume</a>
-        </div>
-        
-        <div class="hero-stats">
-            <div class="stat-card">
-                <div class="stat-number" data-target="1">0</div>
-                <div class="stat-label">Years Experience</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number" data-target="50000">0</div>
-                <div class="stat-label">Records Analyzed</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number" data-target="10">0</div>
-                <div class="stat-label">Major Projects</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number" data-target="99.5">0</div>
-                <div class="stat-label">System Uptime %</div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-            <p class="about-text">
-                I'm a passionate Data Analytics professional pursuing my Master of Science in Management (Data Analytics) at Indiana Wesleyan University (graduating December 2025). With hands-on experience as a Software Engineer at OpenText and a strong foundation in computer science from SRM University, I bring a unique blend of technical expertise and analytical thinking to every project.
-            </p>
-            <p class="about-text">
-                My journey in data analytics is driven by a fascination with transforming raw data into actionable insights. I've worked with datasets ranging from thousands to millions of records, building pipelines, dashboards, and automation tools that drive real business impact.
-            </p>
-            <div class="about-highlight">
-                <strong>Currently:</strong> Completing my Master's degree with a 3.44 GPA, while building a portfolio of data analytics projects that showcase skills in SQL, Python, Tableau, and Power BI. I'm actively seeking opportunities to leverage my technical background and analytics expertise in a data-focused role.
-            </div>
-        </div>
-    </section>
-
-    <section id="skills">
-        <h2 class="section-title">Technical Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <div class="skill-category-title">
-                    <i class="fas fa-code skill-icon"></i>
-                    Programming & Analytics
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name">SQL (MySQL, PostgreSQL)</div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="95"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name">Python (Pandas, NumPy, SciPy)</div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="92"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name">R Programming</div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="80"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name">Java</div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="85"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <div class="skill-category-title">
-                    <i class="fas fa-chart-bar skill-icon"></i>
-                    Data Visualization & BI
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name">Advanced Excel (Pivot, Power Query)</div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="95"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name">Tableau</div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="90"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name">Power BI & DAX</div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="88"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name">Alteryx</div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="75"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <div class="skill-category-title">
-                    <i class="fas fa-cloud skill-icon"></i>
-                    Cloud Platforms
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name">AWS (S3, EC2, Lambda)</div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="85"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name">GCP (BigQuery)</div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="80"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name">Azure</div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="75"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name">Databricks</div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="80"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <div class="skill-category-title">
-                    <i class="fas fa-server skill-icon"></i>
-                    Big Data & ETL
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name">Apache Hadoop</div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="82"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name">PySpark</div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="85"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name">Apache Airflow</div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="78"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name">Apache Kafka</div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="75"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <div class="skill-category-title">
-                    <i class="fas fa-warehouse skill-icon"></i>
-                    Data Warehousing
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name">Snowflake</div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="78"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name">Google BigQuery</div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="80"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name">MySQL / PostgreSQL</div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="95"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name">Data Modeling</div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-progress="88"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
-            
-            <!-- Project 1: Fintech Payments Analytics -->
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>💳 Fintech Payments Analytics Dashboard</h3>
-                    <p>Interactive payment transaction analysis with trend forecasting and fraud detection insights</p>
-                </div>
-                <div class="project-body">
-                    <div class="project-details">
-                        <div class="project-info">
-                            <h4>Project Overview</h4>
-                            <ul class="project-highlights">
-                                <li>Analyzed 500K+ payment transactions across multiple channels</li>
-                                <li>Built real-time monitoring dashboard for transaction patterns</li>
-                                <li>Identified fraud indicators reducing false positives by 40%</li>
-                                <li>Created automated alerts for anomalous payment behavior</li>
-                                <li>Improved transaction processing insights with drill-down capabilities</li>
-                            </ul>
-                            <div class="project-tags">
-                                <span class="tag">Tableau</span>
-                                <span class="tag">SQL</span>
-                                <span class="tag">Python</span>
-                                <span class="tag">Financial Analytics</span>
-                                <span class="tag">Fraud Detection</span>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h4>Key Metrics</h4>
-                            <ul class="project-highlights">
-                                <li>500K+ Transactions</li>
-                                <li>5 Payment Channels</li>
-                                <li>40% Fraud Reduction</li>
-                                <li>Real-time Monitoring</li>
-                            </ul>
-                            <div class="project-links" style="margin-top: 1.5rem;">
-                                <a href="https://github.com/poornavenkatn08/dashboards-portfolio" class="btn btn-primary" target="_blank">View Code</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <h4 style="margin: 2rem 0 1rem 0; color: #2d3748;">📊 Live Interactive Dashboard</h4>
-                    <div class="tableau-embed">
-                        <iframe src="https://public.tableau.com/views/FinTechPaymentAnalyticsDashboard/ExecutiveDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link&:embed=yes&:showVizHome=no" 
-                                height="800" 
-                                allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 2: Airbnb Analytics -->
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>🏠 Airbnb Market Analytics Dashboard</h3>
-                    <p>Comprehensive rental market analysis with pricing optimization and occupancy forecasting</p>
-                </div>
-                <div class="project-body">
-                    <div class="project-details">
-                        <div class="project-info">
-                            <h4>Project Overview</h4>
-                            <ul class="project-highlights">
-                                <li>Analyzed rental data across multiple cities and property types</li>
-                                <li>Created pricing strategy recommendations based on market trends</li>
-                                <li>Built occupancy rate forecasting models with 85% accuracy</li>
-                                <li>Identified high-performing neighborhoods and seasonal patterns</li>
-                                <li>Developed revenue optimization insights for property owners</li>
-                            </ul>
-                            <div class="project-tags">
-                                <span class="tag">Tableau</span>
-                                <span class="tag">Python</span>
-                                <span class="tag">Market Analysis</span>
-                                <span class="tag">Forecasting</span>
-                                <span class="tag">Geospatial</span>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h4>Key Insights</h4>
-                            <ul class="project-highlights">
-                                <li>Multi-city Analysis</li>
-                                <li>85% Forecast Accuracy</li>
-                                <li>Price Optimization</li>
-                                <li>Seasonal Trends</li>
-                            </ul>
-                            <div class="project-links" style="margin-top: 1.5rem;">
-                                <a href="https://github.com/poornavenkatn08/dashboards-portfolio" class="btn btn-primary" target="_blank">View Code</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <h4 style="margin: 2rem 0 1rem 0; color: #2d3748;">📊 Live Interactive Dashboard</h4>
-                    <div class="tableau-embed">
-                        <iframe src="https://public.tableau.com/views/AirBnbFullProject_17477009456330/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link&:embed=yes&:showVizHome=no" 
-                                height="827" 
-                                allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 3: Healthcare Analytics -->
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>🏥 Healthcare Operations Dashboard</h3>
-                    <p>Patient flow analysis and resource optimization for improved healthcare delivery (Power BI)</p>
-                </div>
-                <div class="project-body">
-                    <div class="project-details">
-                        <div class="project-info">
-                            <h4>Project Overview</h4>
-                            <ul class="project-highlights">
-                                <li>Analyzed 30K+ patient records for operational efficiency</li>
-                                <li>Reduced average wait times by 25% through bottleneck identification</li>
-                                <li>Created staff allocation models optimizing resource utilization</li>
-                                <li>Built patient satisfaction tracking with real-time metrics</li>
-                                <li>Implemented predictive models for patient volume forecasting</li>
-                            </ul>
-                            <div class="project-tags">
-                                <span class="tag">Power BI</span>
-                                <span class="tag">Healthcare Analytics</span>
-                                <span class="tag">Operations</span>
-                                <span class="tag">Predictive Modeling</span>
-                                <span class="tag">SQL</span>
-                                <span class="tag">DAX</span>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h4>Impact</h4>
-                            <ul class="project-highlights">
-                                <li>30K+ Patient Records</li>
-                                <li>25% Wait Time Reduction</li>
-                                <li>Resource Optimization</li>
-                                <li>Real-time Tracking</li>
-                            </ul>
-                            <div class="project-links" style="margin-top: 1.5rem;">
-                                <a href="https://github.com/poornavenkatn08/dashboards-portfolio" class="btn btn-primary" target="_blank">View Code</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <p style="margin-top: 2rem; padding: 1.5rem; background: rgba(102, 126, 234, 0.1); border-radius: 10px; color: #4a5568; text-align: center;">
-                        <strong>💡 Power BI Dashboard:</strong> This interactive dashboard is built using Microsoft Power BI with advanced DAX calculations and custom visualizations. View the code repository for data models and implementation details.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Project 4: Tech Layoffs Analysis -->
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>💼 Tech Industry Layoffs Analysis</h3>
-                    <p>SQL-based ETL pipeline analyzing tech industry layoffs with advanced data quality management</p>
-                </div>
-                <div class="project-body">
-                    <div class="project-details">
-                        <div class="project-info">
-                            <h4>Project Overview</h4>
-                            <ul class="project-highlights">
-                                <li>Built SQL ETL pipeline for 2K+ financial & HR records</li>
-                                <li>Reduced data quality issues from 23% to less than 2%</li>
-                                <li>Designed reusable SQL functions with CTEs and window functions</li>
-                                <li>Improved reporting accuracy by 95% through systematic data validation</li>
-                                <li>Created automated data cleaning and transformation workflows</li>
-                            </ul>
-                            <div class="project-tags">
-                                <span class="tag">SQL</span>
-                                <span class="tag">MySQL</span>
-                                <span class="tag">Excel</span>
-                                <span class="tag">ETL</span>
-                                <span class="tag">Data Quality</span>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h4>Technical Achievements</h4>
-                            <ul class="project-highlights">
-                                <li>2K+ Records Processed</li>
-                                <li>23% → 2% Error Rate</li>
-                                <li>95% Accuracy Gain</li>
-                                <li>Automated Pipeline</li>
-                            </ul>
-                            <div class="project-links" style="margin-top: 1.5rem;">
-                                <a href="https://github.com/poornavenkatn08/SQL-Projects" class="btn btn-primary" target="_blank">View Code</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 5: Python Analytics Toolkit -->
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>🐍 Advanced Python Analytics Toolkit</h3>
-                    <p>Automated analytics pipeline with web scraping, statistical analysis, and correlation detection</p>
-                </div>
-                <div class="project-body">
-                    <div class="project-details">
-                        <div class="project-info">
-                            <h4>Project Overview</h4>
-                            <ul class="project-highlights">
-                                <li>Automated pipeline for 2,361+ business datasets</li>
-                                <li>Reduced processing time from 4+ hours to 2 seconds</li>
-                                <li>Conducted correlation analysis across 19 features</li>
-                                <li>Identified 31+ strong relationships for systematic outlier detection</li>
-                                <li>Built web scraping system reducing manual collection by 95%</li>
-                            </ul>
-                            <div class="project-tags">
-                                <span class="tag">Python</span>
-                                <span class="tag">Pandas</span>
-                                <span class="tag">SciPy</span>
-                                <span class="tag">Web Scraping</span>
-                                <span class="tag">Statistical Analysis</span>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h4>Performance</h4>
-                            <ul class="project-highlights">
-                                <li>2,361+ Datasets</li>
-                                <li>4hrs → 2sec Processing</li>
-                                <li>31+ Correlations Found</li>
-                                <li>95% Time Saved</li>
-                            </ul>
-                            <div class="project-links" style="margin-top: 1.5rem;">
-                                <a href="https://github.com/poornavenkatn08/Python_Pandas-Data-Analysis-Portfolio" class="btn btn-primary" target="_blank">View Code</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="journey">
-        <h2 class="section-title">My Journey</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <div class="timeline-date">January 2024 - December 2025</div>
-                    <div class="timeline-title">MS in Management (Data Analytics)</div>
-                    <div class="timeline-company">Indiana Wesleyan University - Marion, IN</div>
-                    <ul class="timeline-achievements">
-                        <li>GPA: 3.44 | Expected Graduation: December 2025 (Degree conferred January 2026)</li>
-                        <li>Specialized coursework in advanced analytics, statistical modeling, and business intelligence</li>
-                        <li>Built comprehensive portfolio of data analytics projects using SQL, Python, Tableau, and Power BI</li>
-                    </ul>
-                </div>
-                <div class="timeline-dot"></div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <div class="timeline-date">August 2022 - January 2024</div>
-                    <div class="timeline-title">Master's in Computer Science</div>
-                    <div class="timeline-company">Illinois Institute of Technology - Chicago, IL</div>
-                    <ul class="timeline-achievements">
-                        <li>Completed advanced coursework in algorithms, data structures, and software engineering</li>
-                        <li>Transferred to Indiana Wesleyan University to specialize in Data Analytics</li>
-                        <li>Gained strong foundation in computational thinking and problem-solving</li>
-                    </ul>
-                </div>
-                <div class="timeline-dot"></div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <div class="timeline-date">November 2021 - May 2022</div>
-                    <div class="timeline-title">Associate Software Engineer</div>
-                    <div class="timeline-company">OpenText - Bengaluru, India</div>
-                    <ul class="timeline-achievements">
-                        <li>Designed and optimized backend APIs handling 50K+ daily client requests</li>
-                        <li>Investigated and resolved 25+ production issues, improving system uptime to 99.5%</li>
-                        <li>Optimized database queries and connection pooling, contributing to 20% reduction in startup time</li>
-                        <li>Enhanced caching layer reducing API response times from 800ms to 200ms (75% improvement)</li>
-                    </ul>
-                </div>
-                <div class="timeline-dot"></div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <div class="timeline-date">May 2021 - November 2021</div>
-                    <div class="timeline-title">Digital Solutions Intern</div>
-                    <div class="timeline-company">OpenText - Bengaluru, India</div>
-                    <ul class="timeline-achievements">
-                        <li>Assisted in ActiveMQ to Kafka migration testing for 10,000+ daily workflow messages</li>
-                        <li>Developed Python log parser automating error detection, reducing monitoring from 4 hours to 30 minutes</li>
-                        <li>Created technical documentation for REST API endpoints and database schemas across 3 applications</li>
-                        <li>Supported Jenkins CI/CD pipeline configuration for automated testing workflows</li>
-                    </ul>
-                </div>
-                <div class="timeline-dot"></div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <div class="timeline-date">August 2017 - June 2021</div>
-                    <div class="timeline-title">Bachelor of Technology, Computer Science</div>
-                    <div class="timeline-company">SRM University, AP - Mangalagiri, India</div>
-                    <ul class="timeline-achievements">
-                        <li>GPA: 3.7 | Strong foundation in algorithms, data structures, and software engineering</li>
-                        <li>Chaired flagship Techfest with 5,000+ participants, managing data-driven operations</li>
-                        <li>Led 25+ technical events, strengthening organizational and communication skills</li>
-                    </ul>
-                </div>
-                <div class="timeline-dot"></div>
-            </div>
-        </div>
-    </section>
-
-    <section id="values">
-        <h2 class="section-title">Values & Leadership</h2>
-        <div class="values-grid">
-            <div class="value-card">
-                <div class="value-icon">
-                    <i class="fas fa-lightbulb"></i>
-                </div>
-                <h3 class="value-title">Innovation & Curiosity</h3>
-                <p class="value-description">
-                    Constantly exploring new technologies and methodologies in data analytics. From optimizing API response times by 75% to automating data pipelines that reduce processing from hours to seconds, I believe in pushing boundaries and finding creative solutions to complex problems.
-                </p>
-            </div>
-
-            <div class="value-card">
-                <div class="value-icon">
-                    <i class="fas fa-chart-line"></i>
-                </div>
-                <h3 class="value-title">Data-Driven Excellence</h3>
-                <p class="value-description">
-                    Committed to delivering accuracy and quality in every analysis. Whether it's improving data quality from 23% errors to less than 2%, or achieving 95% reporting accuracy through systematic validation, I ensure every insight is backed by robust data and rigorous methodology.
-                </p>
-            </div>
-
-            <div class="value-card">
-                <div class="value-icon">
-                    <i class="fas fa-users"></i>
-                </div>
-                <h3 class="value-title">Collaborative Leadership</h3>
-                <p class="value-description">
-                    Experienced in leading large-scale initiatives and cross-functional collaboration. As chair of a flagship Techfest with 5,000+ participants and managing 25+ technical events, I've developed strong organizational and communication skills essential for driving team success and stakeholder alignment.
-                </p>
-            </div>
-
-            <div class="value-card">
-                <div class="value-icon">
-                    <i class="fas fa-rocket"></i>
-                </div>
-                <h3 class="value-title">Impact & Efficiency</h3>
-                <p class="value-description">
-                    Focused on creating tangible business value through automation and optimization. From reducing report generation from 2 hours to 5 minutes, to cutting manual data collection by 95%, I prioritize solutions that save time, reduce costs, and enable teams to focus on strategic initiatives.
-                </p>
-            </div>
-
-            <div class="value-card">
-                <div class="value-icon">
-                    <i class="fas fa-graduation-cap"></i>
-                </div>
-                <h3 class="value-title">Continuous Learning</h3>
-                <p class="value-description">
-                    Dedicated to staying current with evolving technologies and methodologies. Pursuing advanced degrees, building diverse project portfolios, and actively engaging with the data community to expand skills in cloud platforms, big data tools, and emerging analytics techniques.
-                </p>
-            </div>
-
-        
-    </section>
-
-    <section id="contact">
-        <h2 class="section-title">Let's Connect</h2>
-        <div class="contact-container">
-            <p style="font-size: 1.2rem; color: #718096; margin-bottom: 2rem;">
-                I'm actively seeking opportunities in Data Analytics. Let's discuss how I can help turn your data into actionable insights!
-            </p>
-            
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <span>pvneelakantam@gmail.com</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <span>224-946-6686</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Chicago, Illinois</span>
-                </div>
-            </div>
-
-            <div class="contact-icons">
-                <a href="https://www.linkedin.com/in/pneelakantam/" target="_blank" class="contact-icon" title="LinkedIn">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://github.com/poornavenkatn08" target="_blank" class="contact-icon" title="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="mailto:pvneelakantam@gmail.com" class="contact-icon" title="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Poorna Venkat Neelakantam | Data Analytics Professional | Built with passion for data and insights</p>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script>
-        // Visitor Counter Function
-        function updateCounter(img) {
-            // Extract count from the badge
-            const canvas = document.createElement('canvas');
-            const ctx = canvas.getContext('2d');
-            canvas.width = img.width;
-            canvas.height = img.height;
-            ctx.drawImage(img, 0, 0);
-            
-            // For now, use a simple counter stored in localStorage
-            let visits = localStorage.getItem('pageVisits') || 0;
-            visits = parseInt(visits) + 1;
-            localStorage.setItem('pageVisits', visits);
-            
-            document.getElementById('visit-count').textContent = visits.toLocaleString();
-        }
-
-        // Initialize counter on page load
-        window.addEventListener('load', () => {
-            // Use hits.seeyoufarm.com API for tracking
-            fetch('https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fpoornavenkatn08.github.io&count_bg=%23667EEA&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=visits&edge_flat=false')
-                .then(() => {
-                    // Fallback to localStorage for display
-                    let visits = localStorage.getItem('pageVisits') || 0;
-                    visits = parseInt(visits) + 1;
-                    localStorage.setItem('pageVisits', visits);
-                    document.getElementById('visit-count').textContent = visits.toLocaleString();
-                })
-                .catch(() => {
-                    // Fallback
-                    let visits = localStorage.getItem('pageVisits') || 0;
-                    visits = parseInt(visits) + 1;
-                    localStorage.setItem('pageVisits', visits);
-                    document.getElementById('visit-count').textContent = visits.toLocaleString();
-                });
-        });
-
-        // Three.js 3D Background Visualization
-        const container = document.getElementById('three-container');
-        const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-        const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
-        
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        renderer.setClearColor(0x000000, 0);
-        container.appendChild(renderer.domElement);
-
-        camera.position.z = 50;
-
-        // Create 3D Bar Chart
-        const barGroup = new THREE.Group();
-        const barData = [
-            { height: 15, color: 0x667eea, x: -20 },
-            { height: 25, color: 0x764ba2, x: -10 },
-            { height: 20, color: 0x667eea, x: 0 },
-            { height: 30, color: 0x764ba2, x: 10 },
-            { height: 18, color: 0x667eea, x: 20 }
-        ];
-
-        barData.forEach(bar => {
-            const geometry = new THREE.BoxGeometry(6, bar.height, 6);
-            const material = new THREE.MeshPhongMaterial({ 
-                color: bar.color,
-                transparent: true,
-                opacity: 0.7,
-                shininess: 100
-            });
-            const mesh = new THREE.Mesh(geometry, material);
-            mesh.position.set(bar.x, bar.height / 2 - 15, 0);
-            
-            // Add edges
-            const edges = new THREE.EdgesGeometry(geometry);
-            const line = new THREE.LineSegments(
-                edges, 
-                new THREE.LineBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.3 })
-            );
-            mesh.add(line);
-            
-            barGroup.add(mesh);
-        });
-
-        barGroup.position.set(-15, 0, -20);
-        scene.add(barGroup);
-
-        // Create 3D Pie Chart
-        const pieGroup = new THREE.Group();
-        const pieData = [
-            { percent: 0.3, color: 0x667eea },
-            { percent: 0.25, color: 0x764ba2 },
-            { percent: 0.20, color: 0x4facfe },
-            { percent: 0.15, color: 0x43e97b },
-            { percent: 0.10, color: 0xfa709a }
-        ];
-
-        let currentAngle = 0;
-        pieData.forEach(slice => {
-            const angle = slice.percent * Math.PI * 2;
-            const geometry = new THREE.CylinderGeometry(10, 10, 3, 32, 1, false, currentAngle, angle);
-            const material = new THREE.MeshPhongMaterial({ 
-                color: slice.color,
-                transparent: true,
-                opacity: 0.7,
-                shininess: 100
-            });
-            const mesh = new THREE.Mesh(geometry, material);
-            mesh.rotation.x = Math.PI / 2;
-            
-            // Add edges
-            const edges = new THREE.EdgesGeometry(geometry);
-            const line = new THREE.LineSegments(
-                edges, 
-                new THREE.LineBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.3 })
-            );
-            mesh.add(line);
-            
-            pieGroup.add(mesh);
-            currentAngle += angle;
-        });
-
-        pieGroup.position.set(15, 0, -20);
-        scene.add(pieGroup);
-
-        // Create particle network
-        const particlesGeometry = new THREE.BufferGeometry();
-        const particlesCount = 100;
-        const posArray = new Float32Array(particlesCount * 3);
-
-        for(let i = 0; i < particlesCount * 3; i++) {
-            posArray[i] = (Math.random() - 0.5) * 100;
-        }
-
-        particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
-        const particlesMaterial = new THREE.PointsMaterial({
-            size: 0.3,
-            color: 0x667eea,
-            transparent: true,
-            opacity: 0.6
-        });
-
-        const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
-        scene.add(particlesMesh);
-
-        // Lighting
-        const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
-        scene.add(ambientLight);
-
-        const pointLight1 = new THREE.PointLight(0x667eea, 1);
-        pointLight1.position.set(20, 20, 20);
-        scene.add(pointLight1);
-
-        const pointLight2 = new THREE.PointLight(0x764ba2, 1);
-        pointLight2.position.set(-20, -20, 20);
-        scene.add(pointLight2);
-
-        // Animation
-        let scrollY = 0;
-        window.addEventListener('scroll', () => {
-            scrollY = window.scrollY;
-        });
-
-        function animate() {
-            requestAnimationFrame(animate);
-
-            // Rotate bar chart
-            barGroup.rotation.y += 0.003;
-            barGroup.rotation.x = Math.sin(Date.now() * 0.0005) * 0.1;
-
-            // Rotate pie chart
-            pieGroup.rotation.y -= 0.004;
-            pieGroup.rotation.z = Math.cos(Date.now() * 0.0005) * 0.1;
-
-            // Animate particles
-            particlesMesh.rotation.y += 0.001;
-            particlesMesh.rotation.x += 0.0005;
-
-            // Camera movement based on scroll
-            camera.position.y = -scrollY * 0.01;
-
-            renderer.render(scene, camera);
-        }
-
-        animate();
-
-        // Handle window resize
-        window.addEventListener('resize', () => {
-            camera.aspect = window.innerWidth / window.innerHeight;
-            camera.updateProjectionMatrix();
-            renderer.setSize(window.innerWidth, window.innerHeight);
-        });
-
-        // Mouse parallax effect
-        document.addEventListener('mousemove', (e) => {
-            const mouseX = (e.clientX / window.innerWidth) * 2 - 1;
-            const mouseY = -(e.clientY / window.innerHeight) * 2 + 1;
-            
-            barGroup.rotation.y = mouseX * 0.3;
-            pieGroup.rotation.y = -mouseX * 0.3;
-        });
-    </script>
-
-    <script>
-        // Animated counter for hero stats
-        function animateCounter(element) {
-            const target = parseFloat(element.getAttribute('data-target'));
-            const duration = 2000;
-            const increment = target / (duration / 16);
-            let current = 0;
-            
-            const timer = setInterval(() => {
-                current += increment;
-                if (current >= target) {
-                    if (target >= 1000) {
-                        element.textContent = Math.floor(target).toLocaleString() + '+';
-                    } else if (target > 90) {
-                        element.textContent = target.toFixed(1) + '%';
-                    } else {
-                        element.textContent = Math.floor(target) + '+';
-                    }
-                    clearInterval(timer);
-                } else {
-                    if (target >= 1000) {
-                        element.textContent = Math.floor(current).toLocaleString();
-                    } else if (target > 90) {
-                        element.textContent = current.toFixed(1);
-                    } else {
-                        element.textContent = Math.floor(current);
-                    }
-                }
-            }, 16);
-        }
-
-        // Observe stats section
-        const statsObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const counters = entry.target.querySelectorAll('.stat-number');
-                    counters.forEach(counter => animateCounter(counter));
-                    statsObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.5 });
-
-        const heroStats = document.querySelector('.hero-stats');
-        if (heroStats) statsObserver.observe(heroStats);
-
-        // Animate skill bars on scroll
-        const skillsObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const progress = entry.target.getAttribute('data-progress');
-                    entry.target.style.width = progress + '%';
-                    skillsObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.5 });
-
-        document.querySelectorAll('.skill-progress').forEach(skill => {
-            skillsObserver.observe(skill);
-        });
-
-        // Smooth scroll for navigation
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Fade-in animations on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
-
-        const fadeObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('section').forEach(section => {
-            section.style.opacity = '0';
-            section.style.transform = 'translateY(30px)';
-            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            fadeObserver.observe(section);
-        });
-
-        // Navbar background on scroll
         window.addEventListener('scroll', () => {
             const navbar = document.querySelector('.navbar');
             if (window.scrollY > 50) {
