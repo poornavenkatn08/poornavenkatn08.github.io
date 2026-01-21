@@ -1688,7 +1688,7 @@
             <div class="contact-info">
                 <div class="contact-item">
                     <i class="fas fa-envelope"></i>
-                    <span>pvneelakantam@gmail.com</span>
+                    <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="29595f474c4c45484248475d4844694e44484045074a4644">[email&#160;protected]</a></span>
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-phone"></i>
@@ -1707,7 +1707,7 @@
                 <a href="https://github.com/poornavenkatn08" target="_blank" class="contact-icon" title="GitHub">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="mailto:pvneelakantam@gmail.com" class="contact-icon" title="Email">
+                <a href="/cdn-cgi/l/email-protection#2d5d5b434848414c464c43594c406d4a404c4441034e4240" class="contact-icon" title="Email">
                     <i class="fas fa-envelope"></i>
                 </a>
             </div>
@@ -1718,7 +1718,7 @@
         <p>&copy; 2025 Poorna Venkat Neelakantam | Data Analytics Professional | Built with passion for data and insights</p>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script>
         // Visitor Counter Function
         function updateCounter(img) {
@@ -1985,11 +1985,10 @@
             });
         }, observerOptions);
 
+        // Fade-in animation - sections start visible, then animate
         document.querySelectorAll('section').forEach(section => {
-            section.style.opacity = '0';
-            section.style.transform = 'translateY(30px)';
-            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            fadeObserver.observe(section);
+            section.style.opacity = '1';
+            section.style.transform = 'translateY(0)';
         });
 
         window.addEventListener('scroll', () => {
