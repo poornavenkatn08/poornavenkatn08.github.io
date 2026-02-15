@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Poorna Venkat Neelakantam | Live Dashboard Portfolio</title>
-<meta name="description" content="Data Analytics Professional - Interactive Live Dashboard Portfolio">
+<meta name="description" content="Data Analytics Professional - Interactive  Portfolio">
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <style>
@@ -76,8 +76,9 @@ background:linear-gradient(180deg,rgba(5,8,16,0.92) 0%,transparent 100%)}
 .sec-sub{color:var(--t2);font-size:.88rem;margin-bottom:20px}
 
 /* ABOUT */
-.about-grid{display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:start}
-.about-photo{width:120px;height:120px;border-radius:14px;border:2px solid var(--cyan);display:flex;align-items:center;justify-content:center;font-family:'Orbitron',sans-serif;font-size:1.8rem;font-weight:700;color:var(--cyan);background:var(--cyan-d);box-shadow:0 0 30px var(--cyan-g)}
+.about-grid{display:grid;grid-template-columns:200px 1fr;gap:24px;align-items:start}
+.about-photo{width:200px;height:200px;border-radius:14px;border:2px solid var(--cyan);overflow:hidden;box-shadow:0 0 30px var(--cyan-g);flex-shrink:0}
+.about-photo img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
 .about-text{font-size:.9rem;color:var(--t2);line-height:1.7}
 .about-text strong{color:var(--t1)}
 .about-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
@@ -196,7 +197,7 @@ background:linear-gradient(180deg,rgba(5,8,16,0.92) 0%,transparent 100%)}
 .float-label{position:fixed;bottom:28px;left:28px;z-index:100;font-family:'Share Tech Mono',monospace;font-size:.6rem;color:var(--tm);letter-spacing:1.5px;text-transform:uppercase;padding:8px 14px;background:var(--panel-s);border:1px solid var(--bdr);border-radius:8px;backdrop-filter:blur(10px)}
 
 @media(max-width:900px){
-.about-grid{grid-template-columns:1fr}.about-photo{margin:0 auto}
+.about-grid{grid-template-columns:1fr}.about-photo{width:140px;height:140px;margin:0 auto}
 .skills-layout,.proj-grid,.lead-grid{grid-template-columns:1fr}
 .about-kpis{grid-template-columns:1fr 1fr}.contact-grid{grid-template-columns:1fr 1fr}
 .landing-stats{gap:20px}.carousel-tabs{flex-direction:column}
@@ -252,7 +253,7 @@ background:linear-gradient(180deg,rgba(5,8,16,0.92) 0%,transparent 100%)}
 <h2 class="sec-title">Poorna Venkat Neelakantam</h2>
 <p class="sec-sub">Data Analytics Professional &bull; Chicago, IL &bull; MS Data Analytics, Dec 2025</p>
 <div class="about-grid">
-<img src="profile.jpg" alt="Poorna Venkat Neelakantam" class="hero-photo">
+<div class="about-photo"><img src="profile.jpg" alt="Poorna Venkat Neelakantam"></div>
 <div>
 <p class="about-text"><strong>I saved $250K annually</strong> by automating Oracle PL/SQL data pipelines and <strong>identified R$2.9M in revenue recovery</strong> by segmenting 96,477 customers with K-Means clustering. With 1+ year at OpenText building production APIs serving 100K+ daily requests at sub-second response, I bring software engineering rigor to every analysis. I deliver end-to-end solutions: from ETL pipelines and advanced SQL to interactive Tableau dashboards and machine learning models across healthcare, finance, and e-commerce.</p>
 <div class="about-tags"><span class="a-tag">SQL</span><span class="a-tag">Python</span><span class="a-tag">Tableau</span><span class="a-tag">Power BI</span><span class="a-tag">K-Means</span><span class="a-tag">ETL</span><span class="a-tag">Spring Boot</span><span class="a-tag">TensorFlow</span><span class="a-tag">GCP</span></div>
